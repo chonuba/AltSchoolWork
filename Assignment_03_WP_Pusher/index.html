@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="#navbar" role="navigation">
+        <a href="wwww.wppusher.com">
+            <img id="logo" src="./assets/wppusher-logo.svg" alt="wp pusher logo links to homepage">
+        </a>
+        <nav>
+            <ol>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main class="card">
+        <section id="form-wrapper">
+            <h1>Checkout</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><span class="encircled">1</span>Your Basic Informaton</legend>
+                    <label for="first-name">First Name <input class="block-input" id="first-name" name="first-name" type="text" placeholder="Jane" required /></label>
+                    <label for="last-name">Last Name <input class="block-input" id="last-name" name="last-name" type="text" placeholder="Doe" required /></label>
+                    <label class="email" for="email">E-mail <input class="block-input" id="email" name="email" type="email" placeholder="janedoe@example.com" required /></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span class="encircled">2</span>Your Payment Informaton</legend>
+                    <label for="credit-card">Credit Card 
+                        <span id="credit-card">
+                            <input type="text" name="credit-card" placeholder="Card Number" maxlength="16" size="16" required="true" />
+                                <span id="cc-vitals">
+                                    <input type="text" name="month" placeholder="MM" maxlength="2" size="2" required />
+                                    <span>/</span>
+                                    <input type="text" name="year" placeholder="YY" maxlength="2" size="2" required />
+                                    <input type="text" name="month" placeholder="CVC" maxlength="3" size="3" required />
+                                </span>
+                            </span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <button>Buy WP Pusher</button>
+                    <p><span class="encircled small">?</span><strong>Need any help?</strong> Don't hesitate to contact support</p>
+                    <img src="./assets/powered_by_stripe.svg" alt="powered by stripe sticker">
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <section id="pricing">
+                <h2>Freelancer</h2>
+                <p><sup>$</sup>99<sub>/year</sub> </p>
+                <p class="sidebar-text">Automatically renews after 1 year
+                </p>
+            </section>
+            <section class="plan-features">
+                <p><span class="encircled small checkmark">&check;</span>Use on <strong>5</strong> client sites</p>
+                <p><span class="encircled small checkmark">&check;</span>Private repositories</p>
+                <p><span class="encircled small checkmark">&check;</span>Email support</p>
+            </section>
+            <section id="more-features">
+                <p class="sidebar-text">Need <strong>20</strong> client sites?</p>
+                <a class="sidebar-text" href="#">Switch to the Agency plan
+                </a>
+            </section>
+            <section class="quote">
+                <blockquote  class="sidebar-text">FTP is horrible to deal with. <br> WP Pusher solves that issue, <br> and the customer support is<br> awesome!</blockquote>
+                <div>
+                    <img src="./assets/Bitmap.png" alt=""> 
+                    <p class="sidebar-text">Kirk Beard</p> </div>
+            </section>
+        </aside>
+    </main>
+    <footer class="card"><p>&copy 2018 WP Pusher IVS .  <a href="#">Terms of Service</a></p></footer>
+</body>
+</html>
